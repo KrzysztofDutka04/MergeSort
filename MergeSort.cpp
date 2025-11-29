@@ -1,15 +1,16 @@
-#include "MergeSort.h"
+#include "mergesort.h"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 template<typename T>
-MergeSort<T>::MergeSort(const vector<T>& inputArray) : array(inputArray) {}
+MergeSort<T>::MergeSort(vector<T>& inputArray) : array(inputArray) {}  // Inicjalizacja referencji
 
 template<typename T>
 void MergeSort<T>::sort() {
     if (array.size() > 1) {
-        mergeSort(0, array.size() - 1);
+        mergeSort(0, static_cast<int>(array.size() - 1));
     }
 }
 
