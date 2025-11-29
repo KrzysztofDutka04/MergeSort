@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "mergesort.h"
+#include "MergeSort.h"
 
 using namespace std;
 
@@ -17,7 +17,7 @@ int main() {
     intArray.push_back(5);
     intArray.push_back(77);
     intArray.push_back(30);
-    
+
     cout << "Tablica int przed sortowaniem:" << endl;
     for (size_t i = 0; i < intArray.size(); i++) {
         cout << intArray[i] << " ";
@@ -26,7 +26,7 @@ int main() {
 
     MergeSort<int> intSorter(intArray);
     intSorter.sort();
-    
+
     cout << "Tablica int po sortowaniu:" << endl;
     intSorter.display();
     cout << endl;
@@ -43,7 +43,7 @@ int main() {
     doubleArray.push_back(5.6);
     doubleArray.push_back(77.4);
     doubleArray.push_back(30.0);
-    
+
     cout << "Tablica double przed sortowaniem:" << endl;
     for (size_t i = 0; i < doubleArray.size(); i++) {
         cout << doubleArray[i] << " ";
@@ -52,7 +52,7 @@ int main() {
 
     MergeSort<double> doubleSorter(doubleArray);
     doubleSorter.sort();
-    
+
     cout << "Tablica double po sortowaniu:" << endl;
     doubleSorter.display();
     cout << endl;
@@ -64,7 +64,7 @@ int main() {
     longArray.push_back(2000L);
     longArray.push_back(100L);
     longArray.push_back(3000L);
-    
+
     cout << "Tablica long przed sortowaniem:" << endl;
     for (size_t i = 0; i < longArray.size(); i++) {
         cout << longArray[i] << " ";
@@ -73,7 +73,7 @@ int main() {
 
     MergeSort<long> longSorter(longArray);
     longSorter.sort();
-    
+
     cout << "Tablica long po sortowaniu:" << endl;
     longSorter.display();
     cout << endl;
@@ -84,7 +84,7 @@ int main() {
     floatArray.push_back(1.41f);
     floatArray.push_back(1.73f);
     floatArray.push_back(0.57f);
-    
+
     cout << "Tablica float przed sortowaniem:" << endl;
     for (size_t i = 0; i < floatArray.size(); i++) {
         cout << floatArray[i] << " ";
@@ -93,7 +93,7 @@ int main() {
 
     MergeSort<float> floatSorter(floatArray);
     floatSorter.sort();
-    
+
     cout << "Tablica float po sortowaniu:" << endl;
     floatSorter.display();
     cout << endl;
