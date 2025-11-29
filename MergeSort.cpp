@@ -1,4 +1,4 @@
-#include "mergesort.h"
+#include "MergeSort.h"
 #include <iostream>
 
 using namespace std;
@@ -41,7 +41,8 @@ void MergeSort<T>::merge(int left, int mid, int right) {
         if (L[i] <= R[j]) {
             array[k] = L[i];
             i++;
-        } else {
+        }
+        else {
             array[k] = R[j];
             j++;
         }
